@@ -14,7 +14,6 @@ from sqlalchemy.orm import Session
 from dotenv import load_dotenv
 import os
 
-
 # Load values from .env file into environment variables
 load_dotenv()
 
