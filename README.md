@@ -75,11 +75,9 @@ The data for this project is sourced from Google Bigquery public Stackoverflow D
 ## TO run the dockerized App locally -
 
 1. To clone this repository, use the following command:
-
 ```bash
 git clone https://github.com/Sukruthmothakapally/DAMG7245-Summer2023.git
 ```
-
 2. Navigate to streamlit/pages/ and replace ``fastapi:8095`` with ``localhost:8000`` in all the ``.py`` files
 3. [Install Docker](https://docs.docker.com/engine/install/ubuntu/)
 4. [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
@@ -90,9 +88,10 @@ git clone https://github.com/Sukruthmothakapally/DAMG7245-Summer2023.git
 9. Run these commands to connect your system to your GCP account -
 ```bash
 Set google_application_credentials=path_to_json_file
+
 gcloud auth application-default set-quota-project your_project_id_here
 ```
-9. Create a .env file in the root directory with the following variables:
+10. Create a .env file in the root directory with the following variables:
 ```bash
 AIRFLOW_UID= 'user id of your machine'
 
@@ -110,31 +109,33 @@ DB_PORT= 'CloudSQL database port number'
 
 OPENAI_API_KEY= 'Your OpenAI API key for accessing the GPT model.'
 ```
-10. Navigate to Terraform dir and comment out the resource - ``google_compute_instance`` if you don't want the app hosted on GCP
-11. Navigate to ``Terraform/`` path to create the GCP infrastructure with Terraform
-12. Run the following commands -
+11. Navigate to Terraform dir and comment out the resource - ``google_compute_instance`` if you don't want the app hosted on GCP
+12. Navigate to ``Terraform/`` path to create the GCP infrastructure with Terraform
+13. Run the following commands -
 ```bash
 terraform init
+
 terraform plan
+
 terraform apply --auto-approve
 ```
 14. Once you have set up your environment variables, start Airflow by running the following command from the root directory:
 ```bash
 docker compose up
 ```
-11. Access the Airflow UI by navigating to ``http://localhost:8080/`` in your web browser.
-12. To run the DAGs in Airflow, click on the dags links on the Airflow UI and toggle the switch to enable the DAGs.
-13. (Optional) - You can trigger a dag with custom input by selecting ``Trigger dag w/ config``
-14. Once the DAGs have run successfully, access the Streamlit application by navigating to ``http://localhost:8090/``
-15. First sign up and then sign in to use the StackAI app and explore it's features
+15. Access the Airflow UI by navigating to ``http://localhost:8080/`` in your web browser.
+16. To run the DAGs in Airflow, click on the dags links on the Airflow UI and toggle the switch to enable the DAGs.
+17. (Optional) - You can trigger a dag with custom input by selecting ``Trigger dag w/ config``
+18. Once the DAGs have run successfully, access the Streamlit application by navigating to ``http://localhost:8090/``
+19. First sign up and then sign in to use the StackAI app and explore it's features
 
 
 ## To stop the app -
-17. Run this command inside terraform/ to destroy the GCP infrastructure created by terraform -
+1. Run this command inside terraform/ to destroy the GCP infrastructure created by terraform -
 ```bash
 terraform destroy --auto-approve
 ```
-17. Run this command in project home dir to stop docker -
+2. Run this command in project home dir to stop docker -
 ```bash
 docker compose down
 ```
