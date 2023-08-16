@@ -1,0 +1,13 @@
+uvicorn
+fastapi
+pydantic 
+sqlalchemy 
+passlib
+python-multipart
+pydantic[email]
+gunicorn
+psycopg2
+#OpenAI
+torch
+openai
+python-dotenv
