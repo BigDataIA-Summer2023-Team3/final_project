@@ -1,7 +1,7 @@
 from google.cloud import bigquery
 
 # Set up BigQuery client with explicit project ID
-bq_client = bigquery.Client(project='stackai-394819')
+bq_client = bigquery.Client(project='project id')
 
 # Set up query to get the top 3 most repeated tags
 top_tags_query = """
