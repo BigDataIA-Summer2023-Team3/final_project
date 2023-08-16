@@ -72,7 +72,7 @@ The data for this project is sourced from Google Bigquery public Stackoverflow D
 
 
 
-## TO run the dockerized App locally -
+## To run the dockerized App locally -
 
 1. To clone this repository, use the following command:
 ```bash
