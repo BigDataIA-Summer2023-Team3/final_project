@@ -16,3 +16,4 @@ pydantic
 sqlalchemy 
 passlib
 python-multipart
+pytest
