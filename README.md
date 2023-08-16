@@ -78,7 +78,7 @@ The data for this project is sourced from Google Bigquery public Stackoverflow D
 ```bash
 git clone https://github.com/Sukruthmothakapally/DAMG7245-Summer2023.git
 ```
-2. Navigate to streamlit/pages/ and replace ``fastapi:8095`` with ``localhost:8000`` in all the ``.py`` files
+2. Navigate to [`streamlit/pages/`](/streamlit/pages/) and replace ``fastapi:8095`` with ``localhost:8000`` in all the ``.py`` files
 3. [Install Docker](https://docs.docker.com/engine/install/ubuntu/)
 4. [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
 5. [Install Google cloud SDK](https://cloud.google.com/sdk/gcloud)
