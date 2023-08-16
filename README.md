@@ -44,7 +44,7 @@ The data for this project is sourced from Google Bigquery public Stackoverflow D
 
 **3. Data Pipeline:** In this project, a robust data pipeline is established to Extract, Transform, Load (ETL) operations through [`Airflow`](/airflow/dags/). This pipeline orchestrates the extraction of raw data, its transformation to conform to the desired structure, and the loading of cleaned and enriched data into target destinations. The pipeline also automates the creation and storage of embeddings along with performing Great Expectations analysis.
 
-**5. Data Validation:** Used [`Great Expectations/`](/airflow/great_expectations/) to validate the gathered data, confirming its conformity to anticipated formats and values.
+**5. Data Validation:** Used [`Great Expectations`](/airflow/great_expectations/) to validate the gathered data, confirming its conformity to anticipated formats and values.
 
 **4. Model Selection:** Models like SentenceTransformer -'distilbert-base-nli-stsb-mean-tokens' and openAI's 'gpt-3.5-turbo' and 'text-davinci-003' were selected and fine tuned based on the features implemented on StackAI.
 
@@ -56,7 +56,7 @@ The data for this project is sourced from Google Bigquery public Stackoverflow D
 
 - **StackAI Generated Answers:** ‘gpt-3.5-turbo’ model from OpenAI: This functionality leverages an OpenAI - GPT 3.5 Turbo model tailored for generating custom responses. The model was chosen for its advanced language generation capabilities, enabling the creation of coherent and contextually relevant answers. The model was fine-tuned by providing custom prompts and adjusting its temperature to improve its performance on generating answers for StackAI's features namely - 'Ask a question', 'Generate an answer if accepted answer doesn’t exist' and 'Craft a question', thereby enriching the overall user experience and ensuring they receive comprehensive and precise information.
 
-**6. Backend:** [FastAPI`](/fastapi/) serves as a vital component, orchestrating seamless communication between AI models and Streamlit, and enabling efficient user authentication. It ensures a robust connection between various modules, allowing smooth data exchange and interactions between the AI models and the user interface, making it easy to interact with the AI-generated responses and enhancing the overall application's usability.
+**6. Backend:** ['FastAPI'](/fastapi/) serves as a vital component, orchestrating seamless communication between AI models and Streamlit, and enabling efficient user authentication. It ensures a robust connection between various modules, allowing smooth data exchange and interactions between the AI models and the user interface, making it easy to interact with the AI-generated responses and enhancing the overall application's usability.
 
 **7. User Interface:** A [`Streamlit`](/streamlit/) based app that offers an instinctive interface enabling users to effortlessly to register, ask any programming question, get StackAI responses, view related questions from Stack Overflow, view essential Stack Overflow details for these questions, get summaries for the accepted answer and even an option to ask StackAI to craft a question to post on Stack Overflow.
 
