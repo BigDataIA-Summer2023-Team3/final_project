@@ -109,9 +109,8 @@ DB_PORT= 'CloudSQL database port number'
 
 OPENAI_API_KEY= 'Your OpenAI API key for accessing the GPT model.'
 ```
-11. Navigate to Terraform dir and comment out the resource - ``google_compute_instance`` if you don't want the app hosted on GCP
-12. Navigate to ``Terraform/`` path to create the GCP infrastructure with Terraform
-13. Run the following commands -
+11. Navigate to [`terraform/`](/pipeline/terraform/) and comment out the resource - ``google_compute_instance`` if you don't want the app hosted on GCP
+12. To create the GCP infrastructure with Terraform, run the following commands -
 ```bash
 terraform init
 
@@ -119,15 +118,15 @@ terraform plan
 
 terraform apply --auto-approve
 ```
-14. Once you have set up your environment variables, start Airflow by running the following command from the root directory:
+13. Once you have set up your environment variables, start Airflow by running the following command from the root directory:
 ```bash
 docker compose up
 ```
-15. Access the Airflow UI by navigating to ``http://localhost:8080/`` in your web browser.
-16. To run the DAGs in Airflow, click on the dags links on the Airflow UI and toggle the switch to enable the DAGs.
-17. (Optional) - You can trigger a dag with custom input by selecting ``Trigger dag w/ config``
-18. Once the DAGs have run successfully, access the Streamlit application by navigating to ``http://localhost:8090/``
-19. First sign up and then sign in to use the StackAI app and explore it's features
+14. Access the Airflow UI by navigating to ``http://localhost:8080/`` in your web browser.
+15. To run the DAGs in Airflow, click on the dags links on the Airflow UI and toggle the switch to enable the DAGs.
+16. (Optional) - You can trigger a dag with custom input by selecting ``Trigger dag w/ config``
+17. Once the DAGs have run successfully, access the Streamlit application by navigating to ``http://localhost:8090/``
+18. First sign up and then sign in to use the StackAI app and explore it's features
 
 
 ## To stop the app -
