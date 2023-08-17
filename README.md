@@ -2,11 +2,11 @@
 
 ## Please find the app hosted on GCP (for a limited time only) - 
 
-User Interface : [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](http://34.102.9.117:30005/)
+User Interface : [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](http://34.102.97.49:30005/)
 
-Backend : [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=FastAPI&logoColor=white)](http://34.102.9.117:30004/docs)
+Backend : [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=FastAPI&logoColor=white)](http://34.102.97.49:30004/docs)
 
-Data Pipeline : [![Apache Airflow](https://img.shields.io/badge/Apache_Airflow-007A88?style=for-the-badge&logo=Apache%20Airflow&logoColor=white)](http://34.102.9.117:8080/)
+Data Pipeline : [![Apache Airflow](https://img.shields.io/badge/Apache_Airflow-007A88?style=for-the-badge&logo=Apache%20Airflow&logoColor=white)](http://34.102.97.49:8080/)
 
 Documentation : [![codelabs](https://img.shields.io/badge/codelabs-4285F4?style=for-the-badge&logo=codelabs&logoColor=white)](https://codelabs-preview.appspot.com/?file_id=1QLTgE_6TTnMbBc1Sw0KOtDvdpv3VR2oRGZPVJhNTFgs#0)
 
