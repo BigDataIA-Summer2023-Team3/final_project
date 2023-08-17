@@ -68,7 +68,7 @@ The data for this project is sourced from Google Bigquery public Stackoverflow D
 
 ## Project Architecture Diagram
 
-![Implemented Architecture Diagram](https://github.com/Sukruthmothakapally/DAMG7245-Summer2023/raw/Sukruth-branch/final_project/Implemented_architecture_diagram.jpg)
+![Implemented Architecture Diagram](https://github.com/BigDataIA-Summer2023-Team3/final_project/blob/main/diagrams/Implemented_architecture_diagram.jpg)
 
 
 
